@@ -1,23 +1,22 @@
-
-* {
-  box-sizing: border-box;
-}
 body {
   margin: 0;
   padding: 0;
 }
+
 header {
   text-align: center;
   color: white;
   font-family: 'Bangers', cursive;
   font-size: 30px;
 }
+
 .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .player {
   display: flex;
   flex-direction: column;
@@ -27,33 +26,38 @@ header {
   background-color: grey;
   opacity: 0.9;
 }
+
 .photo {
   width: 300px;
   height: 280px;
   border-radius: 30%;
   border: 2px solid #b5c83f;
 }
+
 h2, h4 {
   text-align: center;
   color: white;
 }
+
 ul {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  }
+}
 
-  ul li {
+ul li {
     list-style: none;
     margin-bottom: 10px;
-  }
-.icons {
-  width: 35px;
-  height: 30px;
-  margin: 8px;
 }
+
+.icons {
+  width: 30px;
+  height: 25px;
+  margin: 10px;
+}
+
 .player:hover {
   width: 300px;
   height: 400px;
@@ -62,12 +66,13 @@ ul {
   font-size: 16px;
   border-radius: 30%;
 }
-ul li:hover {
 
+ul li:hover {
   animation-name: touch;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+
 @keyframes touch {
   from {background-color: #b5c83f;}
   to {background-color: #1902cf;}
@@ -84,7 +89,7 @@ ul li:hover {
   body {
     background-image: url("https://pbs.twimg.com/media/EPPW00zW4AQCDR-.jpg");
     background-color: #1f2729;
-    ackground-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
